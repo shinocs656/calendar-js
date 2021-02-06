@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body onload="Render()"> 
+    <div class="container">
+        <div class="calendar">
+            <div class="month">
+                <div class="prev" onclick="movedata('prev')">
+                    <span>&#10094</span>
+                </div>
+                <div>
+                    <p id="month"><strong></strong></p>
+                    <p id="year"></p>
+                </div>
+                <div class="next" onclick="movedata('next')">
+                    <span>&#10095</span>
+                </div>
+            </div>
+            <div class="weekends">
+                <div>Sunday</div>
+                <div>Monday</div>
+                <div>Tuesday</div>
+                <div>Wednesday</div>
+                <div>Thursday</div>
+                <div>Friday</div>
+                <div>Saturday</div>
+            </div>
+            <div class="days">
+                
+                
+         </div>
+           
+            
+        </div>
+    <div id="pop-up" style="height: 82%;">
+        <p id="current_date" style=" margin-left: 6%; margin-top: 6%; "></p>
+        <p id="current_date_key" style="display: none; "></p>
+
+        <span id="close" style=" position: absolute; top: 10px; right: 10px; ">&times;</span>
+        <div class="list_block">
+            <ul id="dynamic_element" style=" overflow-y: scroll; height: 100%; ">
+                
+            </ul>
+        </div>
+        <div class="input-group">
+            <input type="text" class="form-control" id="candidate">
+            <div class="input-group-append">
+                <button onclick="additem()" class="btn-add" type="button">Add</button>
+                <button onclick="removeitem()" class="btn-remove" type="button">Remove</button>
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+
+    
+<script src="script.js"></script>
+</body>
+</html>
